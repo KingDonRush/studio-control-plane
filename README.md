@@ -1,14 +1,18 @@
 # Studio Control Plane
 
-A local-first control plane for freelancers and small web/software studios, with
-WordPress website delivery as a first-class operating surface. It connects client
-acquisition, commercial work and delivery to Dockerized WordPress environments,
-repositories, evidence and the context needed to continue work across AI-agent runs.
+A local-first operations system for managing client work, software delivery,
+repositories, verification and repeatable engineering workflows.
+
+**TypeScript · React · Node.js · SQLite · CLI · MCP**
+
+The same domain services power a React panel, local API, CLI and MCP interface.
+The repository includes 65 tests plus typecheck, lint and workspace builds.
+
+![Inspecting WordPress health and active plugins through the Studio CLI](docs/media/studio-wordpress-runtime.gif)
 
 The system keeps business and implementation records linked: why a site or project
 exists, what was agreed, where its code and runtime live, what has been verified and
-what should happen next. A React panel, CLI and MCP interface operate on shared
-domain services.
+what should happen next.
 
 ## From prospect to delivered work
 
@@ -48,8 +52,6 @@ status/start/stop, HTTP health inspection, WP-CLI commands, plugin inspection,
 database/uploads backups and restore checks. A
 [portfolio site kit](packages/adapters/src/wordpress-site-kit.ts) applies the
 included site capsule to a local WordPress/Elementor runtime.
-
-![Inspecting WordPress health and active plugins through the Studio CLI](docs/media/studio-wordpress-runtime.gif)
 
 The registered WordPress runtime and its active plugins can be inspected from the
 same CLI that manages delivery records.
